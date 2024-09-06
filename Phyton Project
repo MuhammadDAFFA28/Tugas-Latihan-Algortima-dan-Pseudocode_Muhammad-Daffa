@@ -1,0 +1,128 @@
+Muhammad Daffa
+( 2023071036 )
+Desain dan Analisis Algoritma
+
+1.	Cari nilai KPK dari 3 dan 4 : 
+Algoritma : 
+1.Mulai.
+2.Baca dua bilangan bulat, misalnya a (3) dan b (4).
+3.Tentukan nilai maksimum antara a dan b sebagai calon KPK awal (misalnya max).
+4.Selama max bukan kelipatan dari kedua a dan b:
+Tambahkan nilai max dengan 1.
+5.Jika max adalah kelipatan dari a dan b, maka itulah nilai KPK.
+6.Cetak nilai KPK.
+7. Selesai.
+
+Pseudocode :
+
+BEGIN
+  READ a, b  // Input bilangan a = 3, b = 4
+  max = MAX(a, b)  // Ambil nilai terbesar antara a dan b sebagai calon KPK
+  
+  WHILE (max MOD a != 0) OR (max MOD b != 0) DO
+    max = max + 1  // Tambahkan nilai max hingga ditemukan kelipatan terkecil
+  
+  END WHILE
+  
+  PRINT "KPK dari", a, "dan", b, "adalah", max
+
+END
+
+2.	Fungsi untuk menukar posisi dua variabel x dan y, dengan kasus : Ada 2 buah: manggis dan pisang. Manggis di piring 1, Pisang di piring 2. Piring 3 kosong.
+Algoritma : 
+1 .Mulai.
+2.  Misalkan Piring1 berisi manggis dan Piring2 berisi pisang. Piring3 kosong.
+3.  Pindahkan manggis dari Piring1 ke Piring3.
+4.  Pindahkan pisang dari Piring2 ke Piring1.
+5.  Pindahkan manggis dari Piring3 ke Piring2.
+6.  Sekarang, Piring1 berisi pisang dan Piring2 berisi manggis.
+7.  Selesai.
+
+Pseudocode :
+BEGIN // Inisialisasi Piring1 = "manggis" Piring2 = "pisang" Piring3 = "" // Piring kosong 
+// Proses Penukaran Piring3 = Piring1 // Langkah 3: Pindahkan manggis ke piring kosong Piring1 = Piring2 // Langkah 4: Pindahkan pisang ke Piring1 Piring2 = Piring3 // Langkah 5: Pindahkan manggis dari Piring3 ke Piring2 
+
+// Cetak hasil setelah penukaran 
+PRINT "Piring1 berisi:", Piring1 
+PRINT "Piring2 berisi:", Piring2 
+END
+
+
+3. Diketahui sebuah segitiga memiliki ukuran sebagai berikut:
+Alas 25
+Tinggi 30
+Hitung luas dari segitiga tersebut.
+Algoritma :
+1.  Mulai.
+2.  Baca panjang alas segitiga (misalnya 25).
+3.  Baca panjang tinggi segitiga (misalnya 30).
+4.  Hitung luas segitiga menggunakan rumus: Luas=12×alas×tinggi\text{Luas} = \frac{1}{2} \times \text{alas} \times \text{tinggi}Luas=21×alas×tinggi
+5.  Cetak hasil luas segitiga.
+6.  Selesai.
+
+Pseudocode :
+BEGIN //Baca nilai alas dan tinggi segitiga READ alas READ tinggi 
+
+// Hitung luas segitiga luas = 0.5 * alas * tinggi 
+
+// Cetak hasil luas PRINT "Luas segitiga adalah:", luas 
+
+END
+
+
+4. Tentukan algoritma dan pseudocode luas jajar genjang
+    (panjang = 5, tinggi = 3).
+Algortima :
+1.  Mulai.
+2.  Baca panjang alas jajar genjang (misalnya 5).
+3.  Baca tinggi jajar genjang (misalnya 3).
+4.  Hitung luas jajar genjang menggunakan rumus: Luas=alas×tinggi\text{Luas} = \text{alas} \times \text{tinggi}Luas=alas×tinggi
+5.  Cetak hasil luas jajar genjang.
+6.  Selesai.
+
+Pseudocode :
+BEGIN // Baca nilai alas dan tinggi jajar genjang READ alas READ tinggi 
+
+// Hitung luas jajar genjang luas = alas * tinggi 
+// Cetak hasil luas 
+PRINT "Luas jajar genjang adalah:", luas 
+END
+
+5. Tentukan algoritma dan pseudocode volume tabung (jari-jari = 3, tinggi = 5).
+Algoritma :
+1.  Mulai.
+2.  Baca nilai jari-jari (r) tabung (misalnya 3).
+3.  Baca nilai tinggi (t) tabung (misalnya 5).
+4.  Hitung volume tabung menggunakan rumus: Volume=π×r2×t\text{Volume} = \pi \times r^2 \times tVolume=π×r2×t
+5.  Cetak hasil volume tabung.
+6.  Selesai.
+
+Pseudocode :
+BEGIN // Baca nilai jari-jari dan tinggi tabung READ jari_jari READ tinggi 
+// Hitung volume tabung volume = 3.14 * jari_jari * jari_jari * tinggi
+ // Cetak hasil volume 
+PRINT "Volume tabung adalah:", volume 
+END
+
+6. . Tentukan algoritma dan pseudocode volume kerucut
+   (diameter = 5, tinggi = 4).
+Algoritma : 
+1.  Mulai.
+2.  Baca nilai diameter kerucut (misalnya 5).
+3.  Hitung jari-jari kerucut sebagai setengah dari diameter: jari-jari=diameter2\text{jari-jari} = \frac{\text{diameter}}{2}jari-jari=2diameter
+4.  Baca nilai tinggi (t) kerucut (misalnya 4).
+5.  Hitung volume kerucut menggunakan rumus: Volume=13×π×r2×t\text{Volume} = \frac{1}{3} \times \pi \times r^2 \times tVolume=31×π×r2×t
+6.  Cetak hasil volume kerucut.
+7.  Selesai.
+
+Pseudocode : 
+BEGIN // Baca nilai diameter dan tinggi kerucut READ diameter READ tinggi 
+// Hitung jari-jari dari diameter jari_jari = diameter / 2 
+// Hitung volume kerucut volume = (1/3) * 3.14 * jari_jari * jari_jari * tinggi 
+// Cetak hasil volume 
+PRINT "Volume kerucut adalah:", volume 
+END
+
+
+
+
